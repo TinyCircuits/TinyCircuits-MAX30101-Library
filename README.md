@@ -1,6 +1,6 @@
 # TinyCircuits MAX30101 Library
 
-Used for the TinyCircuits **[Pulse Oximetry Sensor](https://tinycircuits.com/collections/processors/products/tinyzero-processor?variant=21137366515796)**.
+Used for the TinyCircuits **[Pulse Oximetry Sensor](https://tinycircuits.com/collections/wireling-sensors/products/pulse-oximetry-sensor-wireling)**.
 
 *Support this library by buying products from **[TinyCircuits](https://tinycircuits.com/)***
 
