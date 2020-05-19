@@ -7,5 +7,23 @@ Used for the TinyCircuits **[Pulse Oximetry Sensor](https://tinycircuits.com/col
 
 ## MAX30101 Class
 
-* **** ** 
-* **void read()** Reads and assigns the BMA250 class variables *X*, *Y*, *Z*, and *tempC*
+* **int begin(    Mode modeInit = DEFAULT_OPERATING_MODE,
+                  SamplingRate samplingRateInit = DEFAULT_SAMPLING_RATE,
+                  SampleAveragingCount averagingCountInit = DEFAULT_AVERAGING_COUNT,
+                  LEDPulseWidth pulseWidthInit = DEFAULT_LED_PULSE_WIDTH,
+                  LEDCurrent IrLedCurrentInit = DEFAULT_IR_LED_CURRENT,
+                  bool debugInit = false
+             )**
+* **void setMode(Mode mode)** Sets *mode* to a mode...
+* **void setSamplingRateAndAveragingCount(SamplingRate rate, SampleAveragingCount count)** 
+* ****
+* ****
+* ****
+* ****
+* ****
+* ****
+* ****
+* ****
+* ****
+* ****
+* ****
