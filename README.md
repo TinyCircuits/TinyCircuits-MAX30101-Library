@@ -20,8 +20,8 @@ Used for the TinyCircuits **[Pulse Oximetry Sensor](https://tinycircuits.com/col
 * **bool foundPeak(unsigned long timeOfValue)**
 
 * **dcFilter_t dcRemoval(float x, float prev_w, float alpha)**
-* **void lowPassButterworthFilter( float x, butterworthFilter_t * filterResult )**
-* **float meanDiff(float M, meanDiffFilter_t* filterValues)**
+* **void lowPassButterworthFilter( float x, butterworthFilter_t \* filterResult )**
+* **float meanDiff(float M, meanDiffFilter_t\* filterValues)**
 
 * **bool update()**
 * **bool pulseValid()**
