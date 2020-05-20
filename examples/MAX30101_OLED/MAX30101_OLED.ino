@@ -26,7 +26,7 @@ GraphicsBuffer screenBuffer = GraphicsBuffer(72, 40, colorDepth1BPP);
 //GraphicsBuffer screenBuffer = GraphicsBuffer(96, 16, colorDepth1BPP);
 //GraphicsBuffer screenBuffer = GraphicsBuffer(128, 64, colorDepth1BPP);
 
-int displayPort = 0;
+int displayPort = 1;
 int resetPin = A0 + displayPort;
 
 #if defined (ARDUINO_ARCH_AVR)
@@ -37,18 +37,12 @@ int resetPin = A0 + displayPort;
 
 bool slowUpdateRate = false;
 
-#if defined (ARDUINO_ARCH_AVR)
-//Unfortunately TinyDuino has a pretty slow maximum I2C speed!
-slowUpdateRate = true;
-#endif
-
 #include <MAX30101.h>
 
 MAX30101 pulseSensor = MAX30101();
-int pulseSensorPort = 1;
+int pulseSensorPort = 0;
 
 const int graphWidth = 72;
-
 float samples[graphWidth];
 
 void setup() {
@@ -80,6 +74,10 @@ void setup() {
     samples[i] = 0.0;
   }
 
+#if defined (ARDUINO_ARCH_AVR)
+//Unfortunately TinyDuino has a pretty slow maximum I2C speed!
+slowUpdateRate = true;
+#endif
 }
 
 void loop() {
