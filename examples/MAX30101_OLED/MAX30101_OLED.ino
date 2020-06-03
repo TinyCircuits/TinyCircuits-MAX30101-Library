@@ -43,6 +43,7 @@ MAX30101 pulseSensor = MAX30101();
 int pulseSensorPort = 0;
 
 const int graphWidth = 72;
+
 float samples[graphWidth];
 
 void setup() {
