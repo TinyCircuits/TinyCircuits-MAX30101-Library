@@ -40,7 +40,6 @@
 
 //status registers
 #define MAX30101_INT_STATUS_1             0x00
-#define MAX30101_INT_STATUS_1             0x00
 #define MAX30101_INT_STATUS_2             0x01
 #define MAX30101_INT_ENABLE_1             0x02
 #define MAX30101_INT_ENABLE_2             0x03

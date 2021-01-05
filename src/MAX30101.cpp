@@ -186,7 +186,7 @@ fifo_t MAX30101::readFIFO()
 void MAX30101::printRegisters()
 {
   MAX30101SerialMonitorInterface.print(readRegister(MAX30101_INT_STATUS_1),  HEX); MAX30101SerialMonitorInterface.print('\t');
-  MAX30101SerialMonitorInterface.print(readRegister(MAX30101_INT_STATUS_1),  HEX); MAX30101SerialMonitorInterface.print('\t');
+  MAX30101SerialMonitorInterface.print(readRegister(MAX30101_INT_STATUS_2),  HEX); MAX30101SerialMonitorInterface.print('\t');
   MAX30101SerialMonitorInterface.print(readRegister(MAX30101_INT_ENABLE_1),  HEX); MAX30101SerialMonitorInterface.print('\t');
   MAX30101SerialMonitorInterface.print(readRegister(MAX30101_INT_ENABLE_2),  HEX); MAX30101SerialMonitorInterface.print('\t');
   MAX30101SerialMonitorInterface.print(readRegister(MAX30101_FIFO_WRITE_PTR), HEX); MAX30101SerialMonitorInterface.print('\t');
