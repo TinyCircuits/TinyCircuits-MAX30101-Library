@@ -42,16 +42,16 @@ Used for the TinyCircuits **[Pulse Oximetry Sensor](https://tinycircuits.com/col
 * **bool update()** Updates raw values from the red and infrared LED readings, sample time, and temperature reading.
 * **bool pulseValid()** Returns true if a valid pulse has been detected.
 * **float BPM()** Returns the sensed BPM value if there is a valid pulse. Otherwise, returns 0.0.
-* **float cardiogram()**
-* **float oxygen()**
-* **float temperature()**
-* **float temperatureF()**
+* **float cardiogram()** Returns the normalized cardiogram output value.
+* **float oxygen()** Returns the current blood oxygen percentage.
+* **float temperature()** Returns the current temperature in degrees Celsius.
+* **float temperatureF()** Returns the current temperature in degrees Fahrenheit.
     
-* **float rawCardiogram()**
-* **float rawIRVal()**
-* **float rawRedVal()**
-* **float DCfilteredIRVal()**
-* **float DCfilteredRedVal()**
+* **float rawCardiogram()** Returns the filtered
+* **float rawIRVal()** Returns the raw value from the infrared LED reading.
+* **float rawRedVal()** Returns the raw value from the red LED reading.
+* **float DCfilteredIRVal()** Returns the filtered value from the infrared LED reading.
+* **float DCfilteredRedVal()** Returns the filtered value from the red LED reading.
 
 ### **private:**
 * **bool detectPulse(float sensor_value, unsigned long timeOfValue)**
